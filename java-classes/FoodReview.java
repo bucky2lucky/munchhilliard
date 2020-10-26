@@ -9,7 +9,7 @@ public class FoodReview
     private Restaurant restaurant;
     private double reviewScore;
     private String reviewTitle;
-    private String reviewBody;
+    private String reviewBody, reviewerName;
     private User user;
     private LocalDate timestamp;
     private int numUsefulLikes; // similar to Like button, but says "Useful"
@@ -34,6 +34,15 @@ public class FoodReview
     }
 
     // accessors and mutators here
+  
+    public String getReviewerName(String _reviewerName){
+      //Ryan Buckner
+      reviewerName = _reviewerName;
+      /**
+       * Creates a parameter _reviewerName and sets the reviewerName variable to that parameter
+       
+      */
+    }
 
     /**
       returns the date that the review was posted
@@ -42,14 +51,5 @@ public class FoodReview
     public LocalDate getTimestamp()
     {
       return timestamp;
-    }
-  
-  /**
-    returns the number of useful likes on the review
-    @return numUsefulLikes which is hoe many useful likes on the review
-   */ 
-    public int getNumUsefulLikes()
-    {
-      return numUsefulLikes;
     }
 }
