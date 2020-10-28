@@ -10,6 +10,7 @@ public class FoodReview
     private double reviewScore;
     private String reviewTitle;
     private String reviewBody;
+    private String reviewer;
     private User user;
     private LocalDate timestamp;
     private int numUsefulLikes; // similar to Like button, but says "Useful"
@@ -43,4 +44,14 @@ public class FoodReview
     {
       return timestamp;
     }
-}
+  
+  
+   /**
+      returns the name of the reviewer
+      @return string reviewer, which is the name of the reviewer
+    */
+    public String getReviewer(String _reviewer)
+    {
+      reviewer = _reviewer;
+      return reviewer;
+    }
